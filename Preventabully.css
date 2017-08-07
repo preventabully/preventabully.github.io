@@ -135,10 +135,6 @@ h6{
   font-weight:300;
   text-decoration: none;
 }
-.spread{
-  border-collapse: separate;
-  border-spacing: 100px 50px;
-}
 td{
   padding: 100px;
 }
