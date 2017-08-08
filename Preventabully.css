@@ -3,28 +3,36 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #FFFFFF;
-}
+    background-color: grey;
+  }
 li {
     float: left;
     border-right:1px solid #bbb;
+    border-bottom:1px solid #bbb;
 }
 li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: pink;
+    background-color: black;
 }
 
 .active {
     background-color: #4CAF50;
 }
-
+.prevent{
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: white;
+  position: relative;
+  float: right;
+  right:4px;
+}
 
 
 
