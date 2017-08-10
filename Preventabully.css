@@ -6,8 +6,8 @@
     background-color: grey;
   }
 li {
-    float: left;
-    border-right:1px solid #bbb;
+    float: right;
+    border-left:1px solid #bbb;
     border-bottom:1px solid #bbb;
 }
 li a {
@@ -30,8 +30,8 @@ li a:hover:not(.active) {
   letter-spacing: 3px;
   color: white;
   position: relative;
-  float: right;
-  right:4px;
+  float: left;
+  left:5px;
 }
 
 

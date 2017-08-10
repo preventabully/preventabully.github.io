@@ -3,48 +3,87 @@
   <head>
     <meta charset="utf-8">
     <title>definition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
     <link rel="stylesheet" href="Preventabully.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Style The Contact Form How Ever You Prefer -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
     <h1 id="Top"> </h1>
         <ul class="test">
-          <li><h3><a href="index.html">Home</a></h3></li>
-          <li><h3><a href="Definition.html">What it is</a></h3></li>
-          <li><h3><a href="Prevention.html">Prevention</a></h3></li>
-          <li><h3><a href="Experiences.html">Experiences</a></h3></li>
-          <li><h3><a href="Survey.html">Survey</a></h3></li>
-          <li><h3><a href="Kid.html">Kids</a></h3></li>
-          <li><h3><a href="Adult.html">Adults</a></h3></li>
           <li><h3><a href="Bully.html">Bullies</a></h3></li>
+          <li><h3><a href="Adult.html">Adults</a></h3></li>
+          <li><h3><a href="Kid.html">Kids</a></h3></li>
+          <li><h3><a href="Survey.html">Survey</a></h3></li>
+          <li><h3><a href="Experiences.html">Experiences</a></h3></li>
+          <li><h3><a href="Prevention.html">Prevention</a></h3></li>
+          <li><h3><a href="Definition.html">What it is</a></h3></li>
+          <li><h3><a href="index.html">Home</a></h3></li>
           <li class="prevent">Prevent a bully</li>
         </ul>
 
-    <br><br>
-    <h1 class="underline"> </h1>
-    <div>
-      <br><br>
-      <form class="" action="index.html" method="post">
-        <table>
-          <tr>
-            <td>Subject:</td>
-            <td><input type="text" name="first"/></td>
-          </tr>
-          <tr>
-            <td>Was this website helpful?</td>
-            <td><input name="number">
-               <option value="good">1</option>
-               <option value="okay">2</option>
-             </select>
-           </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="submit" name="Submit"/>
-            </td>
-          </tr>
-      </form>
+<!--  -->
 
+    <br><br>
+    <h2 class="content-head is-center">Contact Us!</h2>
+      <aside>
+           <p>
+               We would <em>love</em> to hear from you! </p>
+               <p>Please use the <b><em>Contact Form</em></b>
+               to send us a message.
+           </p>
+       </aside>
+       <form id="gform" method="POST" class="pure-form pure-form-stacked"
+         action="https://script.google.com/macros/s/AKfycbzE1kIVzyUWucaqgriX03-wzfvUVuNw94m1FP4XuliW3sNiV6m5/exec">
+           <!-- change the form action to your script url -->
+
+           <fieldset class="pure-group">
+             <label for="name">Name: </label>
+             <input id="name" name="name" placeholder="What your Mom calls you" />
+           </fieldset>
+
+           <fieldset class="pure-group">
+             <label for="message">Message: </label>
+             <textarea id="message" name="message" rows="10"
+             placeholder="Tell us what's on your mind..."></textarea>
+           </fieldset>
+
+           <fieldset class="pure-group">
+             <label for="email"><em>Your</em> Email Address:</label>
+             <input id="email" name="email" type="email" value=""
+             required placeholder="your.name@email.com"/>
+             <span id="email-invalid" style="display:none">
+               Must be a valid email address</span>
+           </fieldset>
+
+           <fieldset class="pure-group">
+             <label for="color">Favourite Color: </label>
+             <input id="color" name="color" placeholder="green" />
+           </fieldset>
+
+           <button class="button-success pure-button button-xlarge">
+             <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+         </form>
+
+         <!-- Customise the Thankyou Message People See when they submit the form: -->
+         <div style="display:none;" id="thankyou_message">
+           <h2><em>Thanks</em> for contacting us!
+             We will get back to you soon!</h2>
+         </div>
+
+         <!-- Submit the Form to Google Using "AJAX" -->
+         <script data-cfasync="false" type="text/javascript"
+         src="form2.js"></script>
+         <!-- <script data-cfasync="false" type="text/javascript"
+         src="/form-submission-handler.js"></script> -->
+       <!-- END -->
+
+<!-- - -->
 
       <div class="bottom">
         <br><br><br><br>
