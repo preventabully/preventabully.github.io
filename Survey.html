@@ -2,71 +2,83 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>definition</title>
+    <title>Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
     <link rel="stylesheet" href="Preventabully.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Style The Contact Form How Ever You Prefer -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <h1 id="Top"> </h1>
-        <ul class="test">
-          <li><h3><a href="Bully.html">Bullies</a></h3></li>
-          <li><h3><a href="Adult.html">Adults</a></h3></li>
-          <li><h3><a href="Kid.html">Kids</a></h3></li>
-          <li><h3><a href="Survey.html">Survey</a></h3></li>
-          <li><h3><a href="Experiences.html">Experiences</a></h3></li>
-          <li><h3><a href="Prevention.html">Prevention</a></h3></li>
-          <li><h3><a href="Definition.html">What it is</a></h3></li>
-          <li><h3><a href="index.html">Home</a></h3></li>
-          <li class="prevent">Prevent a bully</li>
-        </ul>
-      <div class = "left">
-        <br><br>
-        <h3>Send an email</h3>
-        <br>
-        <h4>Please write about your experiences in bullying and how you overcame it. What did you do while you
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <h3><a href="index.html" class="w3-button W3-block w3-black">Prevent a bully</a></h3>
+        </div>
+        <div class="w3-col s1">
+          <h3><a href="Definition.html" class="w3-button w3-block w3-black">Definition</a></h3>
+        </div>
+        <div class="w3-col s1">
+          <h3><a href="Prevention.html" class="w3-button w3-block w3-black">Prevention</a></h3>
+        </div>
+        <div class="w3-col s1">
+          <h3><a href="Experiences.html" class="w3-button w3-block w3-black">Experiences</a></h3>
+        </div>
+        <div class="w3-col s1">
+          <h3><a href="Survey.html" class="w3-button w3-block w3-black">Survey</a></h3>
+        </div>
+        <div class="w3-col s1">
+          <h3><a href="Kid.html" class="w3-button w3-block w3-black">Story</a></h3>
+        </div>
+      </div>
+    </div>
+<br><br><br><br><br><br>
+<center><h1>Send an email!</h1></center>
+<center><div style="width:80%">
+
+      <center><div class = "left">
+
+        <h4 class="big" id="survey" style="padding-right:50px;"><br>Please write about your experiences in bullying and how you overcame it. What did you do while you
         were going through such a time and how would you describe it? There are no limits to what you write but
         please keep in mind that these might be posted on the the website. You can write your name as "anonymous"
-        but your email will not be displayed public.
-        </h4>
-      </div>
-<!--  -->
+        or write your initials but your email will not be displayed publicly.
+      </h4>
+    </div></center>
+<!--  --><br><br>
       <div class = "left">
-<br><br><br><br>
-             <form id="gform" method="POST" class="pure-form pure-form-stacked"
+             <form id="gform" method="POST"
                action="https://script.google.com/macros/s/AKfycbzE1kIVzyUWucaqgriX03-wzfvUVuNw94m1FP4XuliW3sNiV6m5/exec">
                  <!-- change the form action to your script url -->
 
-                 <fieldset class="pure-group">
-                   <label for="name">Name: </label>
-                   <input id="name" name="name" placeholder="Name" />
+                 <fieldset style="border:none">
+                   <label for="name"style="float:left">Name: </label>
+                   <input id="name"style="float:left" name="name" placeholder="Name" />
 
                  </fieldset>
 
-                  <fieldset class="pure-group">
-                    <label for="email">Email Address:</label>
-                    <input id="email" name="email" type="email" value=""
+                  <fieldset style="border:none">
+                    <label for="email"style="float:left">Email Address:</label>
+                    <input id="email"style="float:left" style="width:50%" name="email" type="email" value=""
                     required placeholder="your.name@email.com"/>
                     <span id="email-invalid" style="display:none">
                       Must fill in this area</span>
                   </fieldset>
 
-                 <fieldset class="pure-group">
-                   <label for="message">Message: </label>
-                   <textarea id="message" name="message" rows="10"
-                   placeholder=""></textarea>
+                 <fieldset style="border:none">
+                   <label for="message"style="float:left">Message: </label>
+                   <textarea style="width:130%" id="message" name="message" rows="10"
+                   placeholder="What's your experience..."></textarea>
                  </fieldset>
 
                  <button class="button-success pure-button button-xlarge">
                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
                </form>
-<br><br><br>
+             </div>
+</div></center>
                <!-- Customise the Thankyou Message People See when they submit the form: -->
                <div style="display:none;" id="thankyou_message">
                  <h2><em>Thanks</em> for contacting us!
@@ -80,12 +92,12 @@
                src="/form-submission-handler.js"></script> -->
              <!-- END -->
         </div>
-
+<center><img src="https://media.giphy.com/media/3ohhwpMgLijGMiqRsk/giphy.gif" alt="" width="30%"><img src="https://media.giphy.com/media/3ohhwpMgLijGMiqRsk/giphy.gif" alt="" width="30%"><img src="https://media.giphy.com/media/3ohhwpMgLijGMiqRsk/giphy.gif" alt="" width="30%"></center>
 <!-- - -->
-
+<br><br><br>
 <div class="bottom">
     <br><br><br><br>
-  <h6>Vivian Yee<br><br>STOP BULLYING THROUGH AWARENESS<br>Gold Award<br><br><a href="Ahh">About</a></h6>
+  <h6>Vivian Yee<br><br>STOP BULLYING THROUGH AWARENESS<br>Gold Award<br><br><a href="About.html">About</a></h6>
 </div>
 
   </body>
