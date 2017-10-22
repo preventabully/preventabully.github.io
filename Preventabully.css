@@ -41,11 +41,30 @@ li a:hover:not(.active) {
   left: 5px;
 }
 
+body, html {
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("frends.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 
 
-
-
+#survey{
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
 
 
 
@@ -76,6 +95,17 @@ li a:hover:not(.active) {
   margin-top: 4px;
   margin-bottom: 2px;
 }
+.bgc {
+    /* The image used */
+    background-image: url("COOL.png");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+  }
 
 #EX{
   font-size: 40px;
@@ -100,11 +130,35 @@ li a:hover:not(.active) {
   display: block;
 
 }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
 .image {
    position: relative;
    width: 100%;
 }
-
+.experiences{
+  margin-left: 10%;
+  margin-right:10%;
+  text-indent: 50px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
 h2 {
    position: absolute;
    top: 200px;
@@ -174,19 +228,29 @@ h6{
   border-collapse: separate;
   border-spacing: 100px 50px;
 }
+fieldset{
+  border: 0px;
+}
+.big {
+    line-height: 150%;
+}
 td{
   padding: 100px;
+}
+.ez{
+    border-collapse: separate;
+    border-spacing: 100px 0px;
 }
 /*SECOND PAGE*/
 .whatbully{
  letter-spacing: 3px;
- font-size: 25px;
+ font-size: 130%;
  text-align: center;
  position: relative;
 }
 .whatcyber{
   letter-spacing: 3px;
-  font-size: 25px;
+   font-size: 130%;
   text-align: center;
 }
 .secmenu{
@@ -195,6 +259,7 @@ td{
 .left{
   float: left;
   position: relative;left: 30px;
+  width: 40%;
 }
 .uhead{
   font-size: 30px;
